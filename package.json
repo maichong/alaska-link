@@ -1,0 +1,29 @@
+{
+  "name": "alaska-link",
+  "version": "0.8.0",
+  "description": "Alaska link service",
+  "main": "lib/alaska-link.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib",
+    "watch": "babel ./src --out-dir ./lib -w",
+    "prebuild": "rimraf lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maichong/alaska-link.git"
+  },
+  "author": {
+    "email": "liang@maichong.it",
+    "name": "liang",
+    "url": "https://github.com/liangxingchen"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maichong/alaska-link/issues"
+  },
+  "homepage": "https://github.com/maichong/alaska-link#readme",
+  "peerDependencies": {
+    "alaska": "*"
+  }
+}
