@@ -9,8 +9,8 @@ import alaska from 'alaska';
 export default class LinkService extends alaska.Service {
   constructor(options, alaska) {
     options = options || {};
-    options.id = 'alaska-link';
-    options.dir = __dirname;
+    options.dir = options.dir || __dirname;
+    options.id = options.id || 'alaska-link';
     super(options, alaska);
   }
 }
