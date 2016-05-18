@@ -6,7 +6,7 @@
 
 export default class Link extends service.Model {
   static defaultSort = '-sort';
-  static defaultColumns = 'pic,title,url,sort,activated,createdAt';
+  static defaultColumns = 'pic title url sort activated createdAt';
   static api = { list: 1 };
   static defaultFilters = {
     activated: true
