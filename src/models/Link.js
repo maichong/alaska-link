@@ -4,8 +4,11 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Link extends service.Model {
+import alaska from 'alaska';
+
+export default class Link extends alaska.Model {
   static defaultSort = '-sort';
+  static icon = 'link';
   static defaultColumns = 'pic title url sort activated createdAt';
   static api = { list: 1 };
   static defaultFilters = {
