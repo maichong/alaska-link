@@ -11,8 +11,12 @@ export default class Link extends alaska.Model {
   static icon = 'link';
   static defaultColumns = 'pic title url sort activated createdAt';
   static api = { list: 1 };
-  static defaultFilters = {
-    activated: true
+
+  static defaultFilters = ctx => {
+    if (ctx.service.id === 'alaska-admin') return null;
+    return {
+      activated: true
+    };
   };
 
   static fields = {

@@ -7,11 +7,11 @@
 import alaska from 'alaska';
 
 class LinkService extends alaska.Service {
-  constructor(options, alaska) {
+  constructor(options) {
     options = options || {};
     options.dir = options.dir || __dirname;
     options.id = options.id || 'alaska-link';
-    super(options, alaska);
+    super(options);
   }
 }
 
